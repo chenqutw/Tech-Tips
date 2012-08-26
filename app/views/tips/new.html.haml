@@ -1,0 +1,18 @@
+%h3 New Tip
+
+%p
+  = form_for(@tip) do |f|
+    %ul
+      =	 f.label :title
+      =	 f.text_field :title
+    %ul
+      =	 f.label :content
+      =	 f.text_field :content
+    %ul
+      =	 f.label :author
+      =	 f.text_field :author
+    %ul
+      = f.submit "Create a tip"
+
+
+  

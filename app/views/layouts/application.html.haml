@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+%html
+%head
+  %title TechTips
+  = stylesheet_link_tag    "application", :media => "all"
+  = javascript_include_tag "application"
+  = csrf_meta_tags
+
+.content
+  %ul.nav-tabs
+    %td
+    = link_to 'Home', root_path
+    %td
+    = link_to 'Tips', tips_new_path
+    %td
+    = link_to 'About', about_path
+    %td
+    = link_to 'Login', root_path
+
+  = yield

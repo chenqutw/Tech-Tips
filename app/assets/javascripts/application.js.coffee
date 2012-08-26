@@ -1,0 +1,12 @@
+#= require jquery
+#= require jquery_ujs
+#= require jquery.pjax
+#= require jquery.ba-resize
+#= require rails.validations
+#= require bootstrap
+#= require jquery.jcarousel.min
+#= require jquery.timeago.min
+#= require ZeroClipboard
+#= require jquery.mailcheck
+#= require_tree .
+#= require tips
