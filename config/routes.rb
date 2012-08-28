@@ -1,5 +1,5 @@
 TechTips::Application.routes.draw do
-  resources :tips, only: [:new, :create, :show]
+  resources :tips, only: [:new, :create, :show, :index]
 
   match  "tips" => "tips#index"
   match  "about" => "info#about"

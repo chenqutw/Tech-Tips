@@ -1,33 +1,24 @@
 // Place all the styles related to the Tips controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.content {
-  background: #f5f5dc;
-}
 
-.homepage-title {
-  margin-top: 70px;
-  text-align: center;
-  font-size: 80px;
-}
-
-.homepage-content {
-  margin-top: 40px;
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 60px;
-
-}
-
-.homepage-button {
-  margin-top: 40px;
-  height: 60px;
-  width: 250px;
-  font-size: 40px;
-  font-weight: 200;
-  text-align: center;
-  cursor: pointer;
-  margin-left: 45%;
+.tip-title {
   color: blue;
+  margin-left: 10px;
+  text-align: left;
 }
+
+.tip-content{
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+#tips {
+  font-size: 20px;
+}
+
+.author {
+  float: right;
+}
+
 

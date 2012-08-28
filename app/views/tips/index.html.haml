@@ -1,7 +1,9 @@
-%h3 All tips
+%h1 All tips
 
-%p Title Content Author
-
-- @tips.each do |tip|
-  %li
-    = tip.title
+- if @tips.any?
+  = table_for(@tips) do |t|
+    = t.data do
+      - t.cell(:title) { |e| link_to e.title, "tips/#{e.id}", class: "tip-title" }
+      - t.cell(:author, cell_html: {class: "author"})
+- else
+  No efforts found.

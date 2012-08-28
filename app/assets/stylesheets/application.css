@@ -8,15 +8,21 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
+ *= require bootstrap
  *= require_self
  *= require_tree .
  */
 
 .nav-tabs {
-    height: 35px;
+    height: 30px;
     text-align:right;
-    margin-right: 30px;
     font-size:20px;
     background-color: #000000;
-    color: white;
+    margin-top: -10px;
 }
+
+.nav-link {
+    color: white;
+    margin-right: 20px;
+}
+

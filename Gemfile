@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.6'
 gem 'haml-rails'
 gem 'coffee-rails', '~> 3.2.1'
+gem 'tabletastic'
+gem 'simple_form', git: 'http://github.com/plataformatec/simple_form.git'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
