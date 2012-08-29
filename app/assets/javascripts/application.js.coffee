@@ -1,6 +1,5 @@
 #= require jquery
 #= require jquery_ujs
-#= require jquery.pjax
 #= require jquery.ba-resize
 #= require rails.validations
 #= require bootstrap

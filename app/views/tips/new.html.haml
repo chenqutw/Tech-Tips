@@ -1,18 +1,24 @@
 %h3 New Tip
 
 %p
-  = form_for(@tip) do |f|
-    %ul
-      =	 f.label :title
-      =	 f.text_field :title
-    %ul
-      =	 f.label :content
-      =	 f.text_field :content
-    %ul
-      =	 f.label :author
-      =	 f.text_field :author
-    %ul
-      = f.submit "Create a tip"
+  = simple_form_for @tip, html: {class: "tip-form"} do |f|
+    = f.input :title
+    = f.input :content
+    = f.input :author
+    = f.button :submit
 
+  -#= form_for(@tip) do |f|
+  -#  %ul
+  -#    =	 f.label :title
+  -#    =	 f.text_field :title
+  -#  %ul
+  -#    =	 f.label :content
+  -#    =	 f.text_field :content
+  -#  %ul
+  -#    =	 f.label :author
+  -#    =	 f.text_field :author
+  -#  %ul
+  -#    = f.submit "Create a tip"
+  -#
 
   
