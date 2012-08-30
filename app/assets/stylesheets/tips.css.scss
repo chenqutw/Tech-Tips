@@ -1,6 +1,9 @@
 // Place all the styles related to the Tips controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.page_title {
+  margin-top: 40px;
+}
 
 .tip-title {
   color: blue;
@@ -18,7 +21,6 @@
 }
 
 .author {
-  float: right;
 }
 
 .tip-form {
