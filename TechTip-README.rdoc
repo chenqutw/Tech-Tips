@@ -1,0 +1,31 @@
+Have you ever been through the trouble that you searched almost everywhere on the internet but still couldn't find the answer to your tech problem? 
+Or even you are lucky enough to finally find the cure through a long and painful search, but several days later when you meet the similar problems but forget the answer, which means you have to repeat the same process all over again.
+Or, in an agile team, the knowledge or experiences couldn't be shared immediately.
+
+Well then, welcome to "TechTip", the app which can save you from all the suffering.
+
+This app is a handy and powerful notebook in which you can record your new findings at any time and any place. It's also a platform to share knowledge and experiences with others, especially your team-members.
+
+
+Plans:
+Basic functions:
+1. homepage and nav-bar
+2. create a tip page, only for texts (simple-form)
+3. show a tip page
+4. show all the tips page (tabletastic)
+5. create an account(name,email...) and signin
+6. invite a friend
+7. add paginate function (will_paginate)
+8. search function
+9. and edit font and upload images or files when creating a tip
+10. can comment on a tip.
+11. save as a craft
+
+Advanced functions:
+1. category
+2. gain points to a user according to the number of his tips and the hotness of the tip
+3. add a friend and search for a friend
+4. group your friends
+4. create and join a group/team
+5. different authorities
+6. public modules
