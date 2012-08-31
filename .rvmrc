@@ -1,1 +1,1 @@
-rvm use 1.9.3-p0@agra
+rvm use --create 1.9.3-p0@tech-tip
