@@ -1,20 +1,19 @@
 %h1.page_title Tip
+%h3
+  = link_to 'relative discussion', discussion_path(@discussion)
 
-.tip-content
-  %p
-    %br
-    %b Title:
-    %p
+.mt30
+  .tip-content
+    %p.tip-show
+      %b Question:
       = @tip.title
-
-  %p
-    %br
-    %b Content:
-    %p
-      = @tip.content
-
-  %p
-    %br
-    %b Author:
-    %p
+    %p.tip-show
+      %b Author:
       = @tip.author
+
+    %p.tip-show
+      %br
+      %b Answer:
+      %p.tip-show
+        = @tip.content
+

@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .page_title {
   margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 .tip-title {
@@ -12,8 +13,11 @@
 }
 
 .tip-content{
-  font-size: 20px;
   margin-left: 10px;
+}
+
+.tip-show{
+  font-size: 20px;
 }
 
 #tips {
