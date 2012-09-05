@@ -37,6 +37,14 @@ class TipsController < ApplicationController
     end
   end
 
+  def destroy
+    @tip = Tip.find(params[:id])
+    @discussion = Discussion.find_by_title(@tip.title)
+    @tip.destroy
+    @discussion.destroy
+    redirect_to tips_path()
+  end
+
   private
   def create_discussion_with_tip(title)
      discussion = Discussion.create({title: title})

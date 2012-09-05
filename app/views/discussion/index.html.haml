@@ -1,1 +1,10 @@
 %h1.page_title All discussions
+
+
+- if @discussions.any?
+  = table_for(@discussions) do |t|
+    = t.data do
+      - t.cell(:title) { |e| link_to e.title, discussion_path(e), class: "tip-title" }
+- else
+  No discussions found.
+

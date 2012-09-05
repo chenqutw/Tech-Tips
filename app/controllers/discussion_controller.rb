@@ -1,6 +1,6 @@
 class DiscussionController < ApplicationController
   def index
-    @discussion = Discussion.all
+    @discussions = Discussion.all
   end
 
   def new
