@@ -1,5 +1,8 @@
 TechTips::Application.routes.draw do
+  get "discussion/show"
+
   resources :tips, only: [:new, :create, :show, :index]
+  resources :discussion, only: [:new, :show, :index]
 
   match  "tips" => "tips#index"
   match  "about" => "info#about"
