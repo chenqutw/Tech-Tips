@@ -1,12 +1,17 @@
 TechTips::Application.routes.draw do
+  get "categories/new"
+
   get "discussion/show"
 
   resources :tips, only: [:new, :create, :show, :index, :edit, :update, :destroy]
   resources :discussion, only: [:new, :show, :index, :destroy]
 
-  match  "discussions" => "discussion#index"
+  resources :categories, only: [:new, :show, :index, :destroy]
 
+  match  "discussions" => "discussion#index"
+  match  "categories" => "categories#index"
   match  "tips" => "tips#index"
+
   match  "about" => "info#about"
 
   put 'tips' => 'tips#create'
