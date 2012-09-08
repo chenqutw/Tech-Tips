@@ -3,7 +3,10 @@
 - if @tips.any?
   = table_for(@tips) do |t|
     = t.data do
-      - t.cell(:title) { |e| link_to e.title, "tips/#{e.id}", class: "tip-title" }
+      - t.cell(:title) { |e| link_to(e.title, tip_path(e), class: "tip-title") }
       - t.cell(:author, cell_html: {class: "author"})
+      - t.cell(:actions)  do |e|
+        - render partial: 'action_bar', locals: {tip: e}
+
 - else
   No tips found.
