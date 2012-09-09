@@ -5,6 +5,7 @@ class TipsController < ApplicationController
 
   def new
     @tip = Tip.new
+    @categories = Category.all
   end
 
   def create

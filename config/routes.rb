@@ -4,9 +4,9 @@ TechTips::Application.routes.draw do
   get "discussion/show"
 
   resources :tips, only: [:new, :create, :show, :index, :edit, :update, :destroy]
-  resources :discussion, only: [:new, :show, :index, :destroy]
+  resources :discussion, only: [:new, :create, :show, :index, :edit, :update, :destroy]
 
-  resources :categories, only: [:new, :show, :index, :destroy]
+  resources :categories, only: [:new, :create, :show, :index, :edit, :update, :destroy]
 
   match  "discussions" => "discussion#index"
   match  "categories" => "categories#index"
