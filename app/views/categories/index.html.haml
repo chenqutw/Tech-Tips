@@ -1,0 +1,12 @@
+%h1.page_title All categories
+
+%a.btn.btn-primary.mb20#add-tip{ href: "categories/new" }
+  Add A Category
+
+- if @categories.any?
+  = table_for(@categories) do |t|
+    = t.data do
+      - t.cell(:name) { |e| link_to e.name, category_path(e), class: "tip-title" }
+- else
+  No discussions found.
+

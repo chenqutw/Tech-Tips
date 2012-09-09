@@ -1,5 +1,8 @@
 %h1.page_title All tips
 
+%a.btn.btn-primary.mb20#add-tip{ href: "tips/new" }
+  Add A Tip
+
 - if @tips.any?
   = table_for(@tips) do |t|
     = t.data do

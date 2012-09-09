@@ -1,5 +1,7 @@
 %h1.page_title All discussions
 
+%a.btn.btn-primary.mb20#add-tip{ href: "discussion/new" }
+  Add A Discussion
 
 - if @discussions.any?
   = table_for(@discussions) do |t|

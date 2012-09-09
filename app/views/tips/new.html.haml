@@ -1,9 +1,9 @@
 %h3 New Tip
 
 %p
-  = simple_form_for @tip, html: {class: "tip-form"} do |f|
+  = simple_form_for @tip, url: tips_path(@tip), method: :post, validate: true, html: {class: "tip-form"} do |f|
     = f.input :title
-    = f.input :category, as: :select, collection: @categories
+    = f.input :category_id, as: :select, collection: @categories
     = f.input :content
     = f.input :author
     = f.button :submit

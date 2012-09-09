@@ -1,2 +1,6 @@
-%h1 Categories#new
-%p Find me in app/views/categories/new.html.haml
+%h3 New Category
+
+%p
+  = simple_form_for @category, url: categories_path(@category), method: :post, validate: true, html: {class: "tip-form"} do |f|
+    = f.input :name
+    = f.button :submit, class: "submit-button"
