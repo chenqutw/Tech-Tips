@@ -1,3 +1,4 @@
 class Tip < ActiveRecord::Base
-  attr_accessible :author, :content, :title
+  belongs_to :category
+  attr_accessible :author, :content, :title, :category_id
 end
